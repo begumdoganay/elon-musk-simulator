@@ -1,13 +1,326 @@
+/* Base styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to right, #2563eb, #4b5563);
+    padding: 24px 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(30, 58, 138, 0.5);
+    border-radius: 9999px;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .progress-bar-fill {
+    background-color: #93c5fd;
+    height: 8px;
+    border-radius: 9999px;
+    transition: width 0.5s ease-out;
+  }
+  
+  .progress-text {
+    text-align: center;
+    color: #bfdbfe;
+    font-size: 0.875rem;
+    margin-top: 4px;
+  }
+  
+  /* Products */
+  .products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    padding-bottom: 160px;
+  }
+  
+  .category {
+    margin-bottom: 48px;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #374151;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  @media (min-width: 640px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .product-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image-container {
+    height: 208px;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    padding: 20px;
+  }
+  
+  .product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1f2937;
+  }
+  
+  .product-price {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+  }
+  
+  .product-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  
+  .btn-sell {
+    width: 96px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .btn-sell-disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .btn-sell-enabled {
+    background-color: #d1d5db;
+    color: #374151;
+  }
+  
+  .btn-sell-enabled:hover {
+    background-color: #9ca3af;
+    color: white;
+  }
+  
+  .quantity-input {
+    width: 64px;
+    height: 40px;
+    text-align: center;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+    -moz-appearance: textfield;
+  }
+  
+  .quantity-input::-webkit-outer-spin-button,
+  .quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .btn-buy {
+    width: 96px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .btn-buy-disabled {
+    background-color: #bfdbfe;
+    color: #60a5fa;
+    cursor: not-allowed;
+  }
+  
+  .btn-buy-enabled {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .btn-buy-enabled:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Receipt */
+  .receipt {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e5e7eb;
+    padding: 16px 24px;
+  }
+  
+  .receipt-container {
+    max-width: 896px;
+    margin: 0 auto;
+  }
+  
+  .receipt-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #1f2937;
+  }
+  
+  .receipt-items {
+    max-height: 240px;
+    overflow-y: auto;
+  }
+  
+  .receipt-table {
+    width: 100%;
+  }
+  
+  .receipt-item {
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 1.125rem;
+  }
+  
+  .receipt-item-name {
+    padding: 8px 0;
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .receipt-item-quantity {
+    padding: 8px 0;
+    text-align: center;
+    color: #4b5563;
+  }
+  
+  .receipt-item-price {
+    padding: 8px 0;
+    text-align: right;
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .receipt-total-row {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .receipt-total-label {
+    padding-top: 12px;
+    color: #1f2937;
+  }
+  
+  .receipt-total-price {
+    padding-top: 12px;
+    text-align: right;
+    color: #2563eb;
+  }
+  
+  /* Emote Animation */
+  .emote-container {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  }
+  
+  .emote-wrapper {
+    position: relative;
+  }
+  
+  .emote-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #60a5fa;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.8); }
+    10% { opacity: 1; transform: scale(1); }
+    90% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.8); }
+  }
+  
+  .emote-animation {
+    animation: fadeInOut 2s ease-in-out forwards;
+  }

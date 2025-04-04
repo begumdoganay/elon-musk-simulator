@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Spend Elon Musk's Money
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun interactive web application that lets you experience what it would be like to spend Elon Musk's fortune. Starting with $100 billion, users can purchase various items from everyday products to ultra-luxury goods.
 
-## Available Scripts
+## 🇬🇧 English
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- **Interactive Shopping Experience**: Buy and sell items with a real-time updated balance
+- **Categorized Products**: Browse through different categories of items ranging from everyday products to ultra-luxury goods
+- **Real-time Receipt**: Keep track of your purchases with a dynamic receipt
+- **Progress Tracker**: See what percentage of Elon's fortune you've spent
+- **Responsive Design**: Works well on both desktop and mobile devices
+- **Fun Animation**: Enjoy Elon's reaction when you buy or sell items
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- JavaScript
+- CSS
+- HTML
 
-### `npm test`
+### How to Run the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine
+   ```
+   git clone https://github.com/yourusername/spend-elon-musk-money.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory
+   ```
+   cd spend-elon-musk-money
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server
+   ```
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your browser and go to `http://localhost:3000`
 
-### `npm run eject`
+### How to Play
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Browse through the different categories of items
+2. Click the "Buy" button to purchase an item
+3. Click the "Sell" button to return an item you've purchased
+4. Watch your balance decrease as you spend money
+5. Try to spend as much of the $100 billion as you can!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🇹🇷 Türkçe
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Özellikler
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Etkileşimli Alışveriş Deneyimi**: Gerçek zamanlı güncellenen bakiye ile ürün alıp satın
+- **Kategorize Edilmiş Ürünler**: Günlük ürünlerden ultra lüks mallara kadar farklı kategorilerdeki ürünlere göz atın
+- **Gerçek Zamanlı Fiş**: Dinamik bir fiş ile alışverişlerinizi takip edin
+- **İlerleme Takibi**: Elon'un servetinin yüzde kaçını harcadığınızı görün
+- **Duyarlı Tasarım**: Hem masaüstü hem de mobil cihazlarda iyi çalışır
+- **Eğlenceli Animasyon**: Alışveriş yaparken Elon'un tepkisinin keyfini çıkarın
 
-## Learn More
+### Kullanılan Teknolojiler
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React
+- JavaScript
+- CSS
+- HTML
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Uygulamayı Çalıştırma
 
-### Code Splitting
+1. Depoyu yerel makinenize klonlayın
+   ```
+   git clone https://github.com/kullaniciadin/spend-elon-musk-money.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Proje dizinine gidin
+   ```
+   cd spend-elon-musk-money
+   ```
 
-### Analyzing the Bundle Size
+3. Bağımlılıkları yükleyin
+   ```
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Geliştirme sunucusunu başlatın
+   ```
+   npm start
+   ```
 
-### Making a Progressive Web App
+5. Tarayıcınızı açın ve `http://localhost:3000` adresine gidin
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Nasıl Oynanır
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Farklı kategorilerdeki ürünlere göz atın
+2. Bir ürün satın almak için "Buy" düğmesine tıklayın
+3. Satın aldığınız bir ürünü iade etmek için "Sell" düğmesine tıklayın
+4. Para harcadıkça bakiyenizin azaldığını izleyin
+5. 100 milyar doların mümkün olduğunca fazlasını harcamaya çalışın!
